@@ -1,23 +1,33 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   hello: "Hello world"
+  devise:
+    login: "Log in"
+    signup: "Sign up"
+    password: "%{number_of_password} characters minimum"
+    logout: "Log out"
+    forgot_password: "Forgot your password?"
+    send_mail_password: "Send me reset password instructions"
+    change_password: "Change your password"
+    new_password: "New password"
+    edit_register: "Edit %{resource}"
+    email_confirm_edit_registration: "Currently waiting confirmation for: %{resource}"
+    password_cant_blank: "leave blank if you don't want to change it"
+    need_current_password: "we need your current password to confirm your changes"
+    update: "Update"
+    confirmation: "Resend confirmation instructions"
+    mail_welcome: "Welcome %{email}"
+    mail_content: "You can confirm your account email through the link below:"
+    mail_confirm: "Confirm my account"
+    mail_hello: "Hello %{resource}"
+    mail_confirm_change: "We're contacting you to notify you that your password has been changed."
+    mail_reset_request: "Someone has requested a link to change your password. You can do this through the link below."
+    reset_password: "Change my password"
+    reset_description_1: "If you didn't request this, please ignore this email."
+    reset_description_2: "Your password won't change until you access the link above and create a new one."
+    link_confirm: "Didn't receive confirmation instructions?"
+    sign_in_with: "Sign in with %{resource}"
+    confirm_new_password: "Confirm new password"
+
+  flash:
+    message: "You have "
+    error: "Error"
