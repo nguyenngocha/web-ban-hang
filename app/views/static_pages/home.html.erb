@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+  <%= link_to t("devise.logout"), destroy_user_session_path, method: :delete %>
+  <%= link_to "Edit password", edit_user_registration_path %>
+<% else %>
+  <%= link_to t("devise.login"), new_user_session_path %>
+<% end %>

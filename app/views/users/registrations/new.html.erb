@@ -1,0 +1,46 @@
+<h1><%= t "devise.signup" %></h1>
+<%= form_for resource, as: resource_name, url: registration_path(resource_name) do |f| %>
+  <%= render "shared/error_messages", object: resource %>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-1">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+  
+      <%= f.label :email %>
+      <%= f.email_field :email, autofocus: true, class: "form-control" %>
+  
+      <%= f.label :password %>
+      <% if @minimum_password_length %>
+        <em>(<%= t "devise.password", number_of_password: @minimum_password_length %>)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+  
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+      
+      <%= f.label :phone_number %>
+      <%= f.text_field :phone_number, autocomplete: "off", class: "form-control" %>
+    </div>
+    
+    <div class="col-md-4 col-md-offset-1">
+      <%= f.fields_for :address do |ff| %>
+        <%= ff.label :city %>
+        <%= ff.text_field :city, autocomplete: "off", class: "form-control" %>
+  
+        <%= ff.label :town %>
+        <%= ff.text_field :town, autocomplete:"off", class: "form-control" %>
+  
+        <%= ff.label :village %>
+        <%= ff.text_field :town, autocomplete: "off", class: "form-control" %>
+  
+        <%= ff.label :home_number %>
+        <%= ff.text_field :home_number, autocomplete: "off", class: "form-control" %>
+      <% end %>
+    </div>
+  </div>
+  <br />
+  <div class="center">
+    <%= f.submit t("devise.signup"), class: "btn btn-primary" %>
+  <% end %>
+  <%= render "users/shared/links" %>
+</div>
