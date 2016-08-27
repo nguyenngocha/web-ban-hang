@@ -1,0 +1,68 @@
+<div class="header-middle">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="contactinfo">
+					<ul class="nav nav-pills">
+					  <li>
+					    <%= link_to "#" do %>
+					  	  <i class="glyphicon glyphicon-earphone"></i>
+					  	  <%= t "header.phone" %>
+				  	  <% end %>
+				    </li>
+					  <li>
+					    <%= link_to "#" do %>
+					  	  <i class="glyphicon glyphicon-envelope"></i>
+					  	  <%= t "header.email" %>
+					  	<% end %>
+					  </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<div class="shop-menu pull-right">
+					<ul class="nav navbar-nav">
+				    <li>
+					    <%= link_to "#" do %>
+					  	  <i class="glyphicon glyphicon-user"></i>
+					  	  <%= t "header.account" %>
+					  	<% end %>
+						</li>
+				    <li>
+					    <%= link_to "#" do %>
+					  	  <i class="glyphicon glyphicon-star"></i>
+					  	  <%= t "header.wishlist" %>
+					  	<% end %>
+						</li>
+						<li>
+							<%= link_to "#" do %>
+                <i class="glyphicon glyphicon-screenshot"></i>
+                <%= t "header.checkout" %>
+							<% end %>
+						</li>
+						<li>
+							<%= link_to "#" do %>
+                <i class="glyphicon glyphicon-shopping-cart"></i>
+                <%= t "header.Cart" %>
+							<% end %>
+						</li>
+						<li>
+							<%= link_to "#" do %>
+                <i class="glyphicon glyphicon glyphicon-lock"></i>
+                <%= t "header.login" %>
+							<% end %>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="header-bottom">
+	<div class="container">
+		<div class="search_box pull-right">
+		  <%= text_field_tag :q, nil, class: "form-control",
+		    placeholder: t("header.search") %>
+		</div>
+	</div>
+</div>
