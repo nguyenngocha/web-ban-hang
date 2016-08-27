@@ -31,3 +31,16 @@ en:
   flash:
     message: "You have "
     error: "Error"
+
+  static_page:
+    web_thuong_mai: "Home | E-Shopper"
+
+  header:
+    phone: "+8433 673 308"
+    email: "nguyen.ngoc.an@gmail.com"
+    account: "Account"
+    wishlist: "Wishlist"
+    checkout: "Checkout"
+    cart: "Cart"
+    login: "Login"
+    search: "Search"

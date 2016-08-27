@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap
+
+//= require jquery
+//= require bootstrap.min
+//= require jquery.scrollUp.min
+//= require price-range
+//= require jquery.prettyPhoto
+//= require main
+
+//= require contact
+//= require gmaps
+//= require html5shiv
